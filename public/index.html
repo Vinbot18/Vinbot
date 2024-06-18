@@ -11,7 +11,7 @@
          <div class="container">
             <h1>SHARE BOOST</h1>
             <p>A user-friendly automated website that utilizes your browser's cookies to streamline the process of sharing posts on Facebook using the provided URL.</p>
-         </div>
+            <div class="container">
          <div class="form-wrapper">
             <form onsubmit="submitForm(event)" class="form-container">
                <div class="form-item">
@@ -33,6 +33,7 @@
                <div class="form-item">
                   <button type="submit" onclick="submitForm()" id="submit-button">Submit</button>
                </div>
+               </div>
                <div class="form-item">
                   <div id="result"></div>
                </div>
@@ -49,6 +50,7 @@
             <h4>ABOUT US</h4>
             <p>You can find our open-source repository <a href="https://www.pornhub.com" style="text-decoration: none; color: blue;">here</a>, encouraging developers to contribute, learn, and customize the website</p>
          </div>
+         </div>
       </div>
       <style>
          body, html {
@@ -57,42 +59,74 @@
          body {
          padding: 20px;
          font-family: 'Poppins', sans-serif;
-         background: #000;
+         background: black;
          color: #898989;
          display: flex;
          justify-content: center;
          align-items: center;
          }
          .container {
-         background-color: #0a0a0a;
-         border-radius: 10px;
-         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         background-color: black;
+         border: solid 1px white;
+        border-radius: 10px;
          padding: 20px;
          margin: 20px auto;
          overflow: auto;
-         }
+    max-width: 100%;
+    max-height: 40%;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    cursor: default;
+    outline: 1px solid #fff;
+    background: ;
+    border-radius: 10px;
+    animation: animate 1.5s linear infinite;
+    border: 1px solid transparent;
+    animation: neon-border 2s linear infinite alternate;
+}
+
+@keyframes neon-border {
+    from {
+        border-color: red;
+        box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+    }
+    to {
+        border-color: blue;
+        box-shadow: 0 0 20px blue, 0 0 30px blue, 0 0 40px blue;
+    }
+}
+
          .form-item {
          padding: 8px;
          }
          h1 {
-         color: #343a40;
+         color: whitesmoke;
+         text-align: center;
+         }
+         h4 {
+           text-align: center;
+         }
+         p {
+           text-align: center;
+           color: whitesmoke;
          }
          .form-item label {
          font-size: 13px;
-         color: #495057;
+         color: white;
          margin-bottom: 5px; 
          display: block; 
          }
          input, button {
-         background: #000;
-         color: #fff; 
+         background: ghostwhite;
+         color: black; 
          border: solid 1px #222;
          box-sizing: border-box;
          width: 100%;
          margin-bottom: 10px;
          padding: 10px;
          border-radius: 4px;
-         font-size: 16px;
+         font-size: 11px;
          }
          button {
          cursor: none;
